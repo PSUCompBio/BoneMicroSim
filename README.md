@@ -41,37 +41,3 @@ In here, I have the code and data to do the optimization. 4 files are necessary 
 3.	Coefficiants.m- This contains all the coefficiants for the complex equations that I have for the yield surface. Although I’m calling this “optimization”, no real optimization is happening in these codes. I had used Matlab optimization to optimize the coefficients to minimize the error between the output yield surface and the input yield points. However, this didn’t seem to work really well and only served as a good starting point for determining the general ballpark of the coefficients. What I mainly did with this coefficiants code was play around with the numbers until the plotted surface matched well with the yield points. This is definitely not accurate, but was the best I could come up with. As an output of the SurfaceOptimization.m code, I included the residuals as somewhat of a gauge of how good the fit was. You’ll have to play around with the current configuaration, because the values for the coefficients I have in there now are old, and only accurate for the averages for micros 1-20. At the time, I hadn’t yet extracted data for micros 21-30, and it seems that these last micros drastically changed the shape of the average yield points.
 4.	Ezimplot3.m-This is just a function that allows you to plot 3D implicit plots (what shows up in red after running the script). I found this online, and you should never have to change anything in it. 
 
-
-
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PSUCompBio/BoneMicroSim/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
