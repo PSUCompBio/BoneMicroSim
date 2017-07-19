@@ -1,16 +1,17 @@
 ## Instructions for Analyzing Yield Point Data
 
-The main location of the Matlab analysis code that you’ll need is: 
-
+For those in Kraft Research Group, the main location of the Matlab analysis code that you’ll need is on ACI located at: 
 ```markdown
 /group/Allison/Data/MatlabCode/YieldPoints
 ```
 
-In this YieldPoints directory, there is a directory for
+If you are not in Kraft Research Group then you need to downloaded this respository to run. The directory structure includes the follow details.
+
+### In this YieldPoints directory, there is a directory for
 1.	Separate micro data- these are the individual yield points/outputted files for each of the microstructures. I was originally using this directory as backup, but all the files you should need are in the second directory, Combined Data
 2.	CombinedData- This has all of the files necessary for getting the averages, SD, and optimization
 
-In the CombinedData Directory: 
+### In the CombinedData Directory: 
 
 1.	Archives- random old files
 2.	Figures- Some figures that I had made, although, these will need to be updated with new ones most likely
@@ -20,7 +21,7 @@ In the CombinedData Directory:
 
 Within the 3DAverages and BiaxialAverages directories, there are directories for stress and for strain. Each of these directories contains essentially the same info/code/files, but just altered to be specific to stress or strain- for both of them, the code is identical.
 
-Instructions for use: 
+## Instructions for use: 
 
 ~/3DAverages/Stress(or Strain)
 In this directory, you’ll find 30 csv files. Each of these files comes from a single microstructure. Within the csv files are 401 coordinates representative of the yield points from a specific simulation. The AveragedSurfaceStresses.m file takes the average between each of the 30 micros to create an averaged surface of which it outputs 2 3D plots- one with just the averaged points, and a second with all the micros superimposed as well as the average (this one is kind of messy to see). This file has a copy and past of the SD portion of the code from the biaxial portion. It’s not currently set up for 3D which is something you will have to do if you want a plus and minus SD pointset to go along with the average points. The Strain directory is identical, but uses strain files instead of stresses. The output file, StressAverages.csv, will then be the input csv file into the optimization code that I’ll describe later. You’ll need to copy this file there, as I don’t have it set up to write the file to the Optimization directory.
