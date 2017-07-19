@@ -4,8 +4,7 @@ The main location of the Matlab analysis code that you’ll need is:
 
 ```
 /group/Allison/Data/MatlabCode/YieldPoints
-'''
-
+``
 In this YieldPoints directory, there is a directory for
 1.	Separate micro data- these are the individual yield points/outputted files for each of the microstructures. I was originally using this directory as backup, but all the files you should need are in the second directory, Combined Data
 2.	CombinedData- This has all of the files necessary for getting the averages, SD, and optimization
